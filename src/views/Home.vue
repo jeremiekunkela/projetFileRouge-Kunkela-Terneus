@@ -1,9 +1,10 @@
 <template>
-<h1>Home</h1>
-<li><router-link to="/">Accueil</router-link></li>
+<h1>Mes factures</h1>
+    <router-link to="/invoice1">facture</router-link>
 
-<!-- Éléments statiques qui ne changent pas -->
-<!-- ... -->
-<!-- Partie dynamique -->
-<router-view></router-view>
 </template>
+<script>
+
+export default {}
+</script>
+
