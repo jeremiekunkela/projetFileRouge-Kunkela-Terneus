@@ -1,10 +1,8 @@
 <template>
-<h1>Mes factures</h1>
-    <router-link to="/invoice1">facture</router-link>
-
+  <h1>Mes factures</h1>
+  <router-link to="/invoice">facture</router-link>
 </template>
 <script>
-
-export default {}
+export default {};
 </script>
 
