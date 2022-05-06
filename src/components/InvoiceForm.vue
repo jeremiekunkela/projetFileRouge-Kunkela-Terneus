@@ -42,6 +42,8 @@
   </tbody>
     <button v-on:click="addLine">Ajouter une ligne</button>
   </table>  
+      <button v-on:click="validateInvoice">Valider la facture</button>
+
 </template>
 
 <script lang ="ts">
@@ -93,6 +95,11 @@ export default {
         quantity: null,
       });
     },
+    validateInvoice(){
+      this.store.invoice.dueDate = new Date().toISOString().split('T')[0];
+      this.$router.push("/");
+
+    }
   },
 };
 </script>

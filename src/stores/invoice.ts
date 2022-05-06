@@ -9,7 +9,7 @@ export const useInvoiceStore  = defineStore({
         surname: "",
         telephone: "",
       },
-      dueDate: new Date().toISOString().split('T')[0],
+      dueDate: "",
       tva: 0,
       rows: [
         {
