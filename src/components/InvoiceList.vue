@@ -10,14 +10,17 @@
         <td>Date</td>
         <td>Montant en €</td>
       </tr>
+    </thead>
+
+    <tbody @click="showInvoive">
       <tr>
         <td>0</td>
         <td>{{ store.clientFullName }}</td>
         <td>{{ store.invoice.dueDate }}</td>
         <td>{{ store.totalPrice }}</td>
       </tr>
-      <router-link to="/invoice">ma facture</router-link>
-    </thead>
+    </tbody>
+
   </table>
 </template>
 
@@ -28,6 +31,11 @@ export default {
   setup() {
     const store = useInvoiceStore();
     return { store };
+  },
+  methods: {
+    showInvoive() {
+      this.$router.push("/invoice");
+    },
   },
 };
 </script>
