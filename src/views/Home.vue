@@ -1,8 +1,13 @@
 <template>
-  <h1>Mes factures</h1>
-  <router-link to="/invoice">facture</router-link>
+  <InvoiceList/>
 </template>
 <script>
-export default {};
+import InvoiceList from '@/components/InvoiceList.vue'
+
+export default {
+  components : {
+  InvoiceList
+  }
+};
 </script>
 

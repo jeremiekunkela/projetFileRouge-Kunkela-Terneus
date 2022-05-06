@@ -1,6 +1,6 @@
 
 <template>
-    <router-link to="/">HOME</router-link>
+<h1>Mon site de facturation</h1>
       <router-view/>
 </template>
     

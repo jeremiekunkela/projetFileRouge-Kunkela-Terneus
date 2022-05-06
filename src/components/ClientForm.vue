@@ -4,7 +4,7 @@
 		<br>
 		Nom : <input type="text" v-model="surname" />
 		<br>
-		Numéro : <input type="phone" v-model="telephone" />
+		Numéro : <input type="text" v-model="telephone" />
 	</p>
 	<button @click="$emit('formSubmit', this)">Valider</button>
 </template>
@@ -13,9 +13,9 @@
 	export default {
 		data() {
 			return {
-				name: this.client.name,
-				surname: this.client.surname,
-				telephone: this.client.telephone,
+				name: this.name,
+				surname: this.surname,
+				telephone: this.telephone,
 			}
 		},
 		props: [
